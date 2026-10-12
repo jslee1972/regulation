@@ -17,11 +17,11 @@
 答：清單與詳情頁的縮圖由我們的伺服器輪流更新，約每 10 分鐘一輪；超過 15 分鐘沒更新才會標示過期。點開單一攝影機會直接連線高公局，畫面是即時的。若影像一直載入不出來，通常是高公局串流暫時限流，App 會自動重連。
 
 **Q5：語音提醒怎麼用？**
-答：進入該隧道頁面，點右上角的喇叭圖示開啟「語音建議」。當您朝著隧道行駛，距離入口約 3 公里、1.5 公里、800 公尺會各提醒一次；前方有壅塞時，距壅塞起點約 3 公里、1 公里也會提醒。可在 iOS「設定」確認已允許通知與定位。
+答：語音建議預設為開啟（隧道頁面右上角的喇叭圖示為綠色），可隨時點一下關閉或重新開啟。當您朝著隧道行駛，距離入口約 3 公里、1.5 公里、800 公尺會各提醒一次；前方有壅塞時，距壅塞起點約 3 公里、1 公里也會提醒。可在 iOS「設定」確認已允許通知與定位。
 
 **Q6：語音提醒沒有播報？**
 答：請依序確認：
-1. 已在該隧道頁面開啟喇叭圖示，且 iOS「設定 → 隧行 → 位置」為「永遠」或「使用 App 期間」。
+1. 該隧道的喇叭圖示為開啟狀態（綠色），且 iOS「設定 → 隧行 → 位置」為「永遠」或「使用 App 期間」。
 2. 手機沒有靜音模式以外的限制；鎖定畫面或背景時，語音需要音訊與定位背景功能保持開啟。
 3. 您必須在國道上、朝著隧道方向、時速約 20 公里以上，才會觸發提醒。
 4. 隧道內沒有 GPS，兩座隧道相連時（例如雪山與彭山之間），第二座隧道的提醒會在出洞口取得定位後才播報。
@@ -67,7 +67,7 @@
 
 **Accuracy.** Data updates every minute but the source itself lags by about 3–4 minutes. Lane advice and passing times are estimates for reference only; follow road signs and conditions.
 
-**Voice advice.** Open a tunnel and tap the speaker icon. While you drive toward the tunnel (about 20 km/h or faster, on the route), you are reminded at roughly 3 km, 1.5 km and 800 m; with congestion ahead, at roughly 3 km and 1 km. Allow notifications and location in iOS Settings. There is no GPS inside tunnels, so for connected tunnels the next reminder is spoken after you exit.
+**Voice advice.** Voice advice is on by default (the speaker icon at the top right of a tunnel page is green); tap it to turn it off or on again. While you drive toward the tunnel (about 20 km/h or faster, on the route), you are reminded at roughly 3 km, 1.5 km and 800 m; with congestion ahead, at roughly 3 km and 1 km. Allow notifications and location in iOS Settings. There is no GPS inside tunnels, so for connected tunnels the next reminder is spoken after you exit.
 
 **Images.** List thumbnails are refreshed about every 10 minutes (marked "stale" after 15). Opening one camera connects directly to the Freeway Bureau stream (about 5 MB per minute; not processed by us, so plates are not blurred there).
 
