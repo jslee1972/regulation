@@ -11,7 +11,7 @@
 ### 1. 定位（Location）
 
 - **使用 App 期間**：用來判斷您離哪一座隧道最近（排序隧道清單）、您目前的行車方向，以及距離隧道入口或前方壅塞路段還有多遠。
-- **背景定位（語音建議，預設開啟）**：「語音建議」預設為開啟。開啟時，本應用程式會在您授予定位權限後，於背景或鎖定畫面時持續使用定位，以便在進入隧道前、前方壅塞時自動播報。您可以在任一隧道頁面右上角的喇叭圖示關閉該隧道的語音建議；全部關閉後，背景定位即停止。若您不授予定位權限，則不會使用定位。
+- **背景定位（語音建議，預設開啟）**：「語音建議」預設為開啟。開啟時，本應用程式會在您授予定位權限後，於背景或鎖定畫面時持續使用定位，以便在進入隧道前、前方壅塞時自動播報。您可以在任一隧道頁面右上角的喇叭圖示關閉該隧道的語音建議；全部關閉後，背景定位即停止。若您不授予定位權限，則不會使用定位。**若 App 在背景連續超過 1 小時沒有回到前景，背景定位會自動暫停**，回到 App 後自動恢復。
 - **您的位置只在手機上計算**：位置資料不會儲存、不會上傳到我們的伺服器；我們向伺服器查詢資料時，只會送出「隧道代號與方向」，不含任何座標。
 - 您可隨時在 iOS「設定 → 隱私權與安全性 → 定位服務 → 隧行」關閉定位權限；關閉後仍可查看各隧道資訊，但無法自動排序、判斷方向與語音提醒。
 
@@ -85,7 +85,7 @@ Last updated: October 12, 2026
 
 TunnelPass shows per-lane live speeds, congestion information and a recommended lane for Taiwan freeway tunnels, using open data from Taiwan's Freeway Bureau (MOTC), and gives voice reminders before you reach a tunnel. There is no account or sign-up, and we do not collect personally identifying information.
 
-**Location.** While the app is in use, location is used to sort tunnels by distance, work out your direction of travel, and measure the distance to a tunnel entrance or to congestion ahead. "Voice advice" is on by default. While it is on and you have granted location permission, location is used in the background or with the screen locked so reminders can be spoken before a tunnel or congestion; you can switch it off per tunnel with the speaker icon at the top right of each tunnel page (with all off, background location stops). Without location permission, location is not used. Your location is computed on your device only. It is not stored on or sent to our servers — requests to our server contain only a tunnel ID and direction, never coordinates. You can revoke location access anytime in iOS Settings.
+**Location.** While the app is in use, location is used to sort tunnels by distance, work out your direction of travel, and measure the distance to a tunnel entrance or to congestion ahead. "Voice advice" is on by default. While it is on and you have granted location permission, location is used in the background or with the screen locked so reminders can be spoken before a tunnel or congestion; you can switch it off per tunnel with the speaker icon at the top right of each tunnel page (with all off, background location stops). Without location permission, location is not used. **If the app stays in the background for more than 1 hour without being opened, background location is paused automatically** and resumes when you return to the app. Your location is computed on your device only. It is not stored on or sent to our servers — requests to our server contain only a tunnel ID and direction, never coordinates. You can revoke location access anytime in iOS Settings.
 
 **Voice and notifications.** Reminders use the built-in iOS speech synthesizer; the microphone is not used and nothing is recorded. Background reminders are local notifications; no remote push is used.
 
